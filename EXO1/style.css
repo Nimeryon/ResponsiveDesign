@@ -123,23 +123,6 @@ body {
     padding-bottom: 8rem;
 }
 
-@media only screen and (max-width: 992px){
-    #cozy-places .house {
-        width: 100%;
-    }
-
-    #cozy-places .button-div {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-}
-@media only screen and (min-width: 992px){
-    #cozy-places .house {
-        max-height: 450px;
-    }
-}
-
 .image-container {
     position: relative;
     text-align: center;
@@ -157,4 +140,47 @@ body {
     height: 50%;
     width: 100%;
     overflow: hidden;
+}
+
+#list img {
+    position: relative;
+    height: 650px;
+}
+
+.list-m-p {
+    margin: 50px;
+    padding: 50px;
+}
+
+#cozy-places .house {
+    width: 100%;
+}
+
+#cozy-places .button-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.flex-div-list {
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (min-width: 992px){
+    #cozy-places .house {
+        max-height: 450px;
+    }
+}
+
+
+@media only screen and (min-width: 1200px){
+    #cozy-places .house {
+        max-height: 450px;
+    }
+
+    .flex-div-list {
+        display: flex;
+        justify-content: flex-start;
+    }
 }
