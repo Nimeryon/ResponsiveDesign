@@ -154,7 +154,7 @@ body {
 }
 
 .image-card {
-    height: 100%;
+    height: 50%;
     width: 100%;
     overflow: hidden;
 }
