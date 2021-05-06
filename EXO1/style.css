@@ -149,7 +149,7 @@ body {
 
 .list-m-p {
     margin: 50px;
-    padding: 50px;
+    padding: 20px;
 }
 
 #cozy-places .house {
@@ -171,6 +171,11 @@ body {
     #cozy-places .house {
         max-height: 450px;
     }
+
+    .list-m-p {
+        margin: 50px;
+        padding: 40px;
+    }
 }
 
 
@@ -182,5 +187,10 @@ body {
     .flex-div-list {
         display: flex;
         justify-content: flex-start;
+    }
+
+    .list-m-p {
+        margin: 50px;
+        padding: 50px;
     }
 }
