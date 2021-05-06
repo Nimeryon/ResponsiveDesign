@@ -46,7 +46,7 @@ body {
 }
 
 #latest-homes .house {
-    max-height: 380px;
+    max-height: 500px;
 }
 
 .home-card  h5, p {
@@ -106,6 +106,9 @@ body {
 
 #cozy-places {
     background-image: url("Medias/accommodations-tag-cozy-places-38a12fe6.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit:contain;
 }
 
 .house-card {
@@ -117,7 +120,7 @@ body {
 }
 
 .big-padding-b {
-    padding-bottom: 6.5rem;
+    padding-bottom: 8rem;
 }
 
 @media only screen and (max-width: 992px){
@@ -133,7 +136,7 @@ body {
 }
 @media only screen and (min-width: 992px){
     #cozy-places .house {
-        max-height: 300px;
+        max-height: 450px;
     }
 }
 
