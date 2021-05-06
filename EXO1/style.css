@@ -136,3 +136,21 @@ body {
         max-height: 300px;
     }
 }
+
+.image-container {
+    position: relative;
+    text-align: center;
+    color: #f8f8f8;
+}
+
+.image-center {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.image-card {
+    height: 100%;
+    overflow: hidden;
+}
