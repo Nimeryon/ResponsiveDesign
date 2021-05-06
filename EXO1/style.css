@@ -1,0 +1,138 @@
+/* #008776
+#f8f8f8 */
+body {
+    padding: 0;
+    margin: 0;
+    background: #f8f8f8;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+.search .form-control {
+    padding-left: 2.375rem;
+}
+
+.search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+}
+
+.carousel .carousel-control-prev, .carousel .carousel-control-next {
+    visibility: hidden;
+}
+
+.carousel:hover .carousel-control-prev, .carousel:hover .carousel-control-next {
+    visibility: visible;
+}
+
+.carousel-image {
+    object-fit: cover;
+    min-height: 600px !important;
+}
+
+.carousel-caption h3 {
+    font-size: small;
+	font-weight: 500;
+}
+
+.carousel-caption p {
+    font-size: 42px;
+	font-weight: 500;
+}
+
+#latest-homes .house {
+    max-height: 380px;
+}
+
+.home-card  h5, p {
+	font-weight: 500;
+    font-size: 14px;
+}
+
+.home-card  h5 {
+    color: #008776;
+    letter-spacing: 2px;
+}
+
+.big-green {
+    font-size: 14px;
+}
+
+#special img {
+    position: relative;
+    transform: translate(45%);
+    height: 500px;
+}
+
+.big-text {
+    font-size: 24px;
+}
+
+.big-green {
+	font-weight: 500;
+    color: #008776;
+}
+
+.green {
+    color: #008776;
+}
+
+.heavy {
+	font-weight: 500;
+}
+
+.light {
+	font-weight: 200;
+}
+
+.zoomed-image {
+    overflow: hidden;
+}
+
+.zoomed-image img {
+    transform: scale(1.02, 1.02);
+    transition: all 0.2s ease-in-out;
+}
+
+.zoomed-image:hover img {
+    transform: scale(1, 1);
+    cursor: pointer;
+}
+
+#cozy-places {
+    background-image: url("Medias/accommodations-tag-cozy-places-38a12fe6.webp");
+}
+
+.house-card {
+    background-color: #f8f8f8;
+}
+
+.big-margin-b {
+    margin-bottom: 6.5rem;
+}
+
+.big-padding-b {
+    padding-bottom: 6.5rem;
+}
+
+@media only screen and (max-width: 992px){
+    #cozy-places .house {
+        width: 100%;
+    }
+
+    #cozy-places .button-div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+@media only screen and (min-width: 992px){
+    #cozy-places .house {
+        max-height: 300px;
+    }
+}

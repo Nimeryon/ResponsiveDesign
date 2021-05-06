@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Design-Accomodations</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <div class="container-xl overflow-hidden p-0">
+        <!-- Header -->
+        <header class="big-margin-b">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <picture>
+                            <source media="(min-width: 992px)" srcset="Medias/logo.svg">
+                            <img src="Medias/logo-mobile.svg" alt="logo">
+                        </picture>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav m-auto me-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a href="#" class="nav-link px-2 text-dark">Accommodations</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link px-2 text-dark">Discover</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link px-2 text-dark">Map</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link px-2 text-dark">About</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link px-2 text-dark">Blog</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link px-2 text-dark">Shop</a></li>
+                        </ul>
+                        <div class="d-flex">
+                            <div class="form-group search">
+                                <i class="fas fa-search form-control-feedback text-muted"></i>
+                                <input type="text" class="form-control rounded-pill bg-light text-muted" placeholder="Search">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <section>
+                <div id="carouselIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active" aria-current="true"
+                            aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="Medias/accommodations-post-robert-s-hill-getaway-teaser-bg-dbfd6056.webp" class="d-block carousel-image w-100"
+                                alt="Robert's Hill Gateway">
+                            <div class="carousel-caption d-flex h-100 justify-content-center flex-column">
+                                <h3>ROBERT'S HILL GETAWAY</h3>
+                                <div class="d-flex justify-content-center w-100">
+                                    <p class="w-50">A Unique Experience Under The Sky</p>
+                                </div>
+                                <div class="d-flex justify-content-center w-100">
+                                    <button type="button" class="btn btn-light rounded-pill">View House</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Medias/accommodations-post-eikeland-guesthouse-teaser-bg-44849a8c.webp" class="d-block carousel-image w-100"
+                                alt="Eikeland Guesthouse">
+                            <div class="carousel-caption d-flex h-100 justify-content-center flex-column">
+                                <h3>EIKELAND GUESTHOUSE</h3>
+                                <div class="d-flex justify-content-center w-100">
+                                    <p class="w-50">Family Holidays in the Country</p>
+                                </div>
+                                <div class="d-flex justify-content-center w-100">
+                                    <button type="button" class="btn btn-light rounded-pill">View House</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Medias/accommodations-post-hacienda-macerata-teaser-bg-b7cf8e0f.webp" class="d-block carousel-image w-100"
+                                alt="Hacienda Macerata">
+                            <div class="carousel-caption d-flex h-100 justify-content-center flex-column">
+                                <h3>HACIENDA MACERATA</h3>
+                                <div class="d-flex justify-content-center w-100">
+                                    <p class="w-50">Historic Villa in Scenic Andalusia</p>
+                                </div>
+                                <div class="d-flex justify-content-center w-100">
+                                    <button type="button" class="btn btn-light rounded-pill">View House</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
+        </header>
+        <!-- Main -->
+        <main>
+            <section id="latest-homes" class="mx-xl-5 mx-lg-5 mx-md-3 mx-sm-0 mx-0 mt-5 big-margin-b">
+                <div class="d-flex justify-content-between">
+                    <h4>Lastest Homes</h4>
+                    <button class="btn"><i class="fas fa-minus fa-lg big-green"></i></i><span class="mx-1">View All</span></button>
+                </div>
+                <div id="homes" class="d-flex flex-nowrap">
+                    <article class="p-1">
+                        <div class="zoomed-image">
+                            <img id="house" class="house zoomed-image" src="Medias/accommodations-post-holiday-house-husum-fb9519ee.webp"
+                                alt="Holyday House Husum">
+                        </div>
+                        <div class="home-card m-0 p-0 mt-3">
+                            <h5 class="card-title mb-0 big-green">NORTH SEA</h5>
+                            <p class="card-text mt-0">Holyday House Husum</p>
+                        </div>
+                    </article>
+                    <article class="p-1">
+                        <div class="zoomed-image">
+                            <img id="house" class="house zoomed-image" src="Medias/accommodations-post-panorama-suites-a155d4cd.webp"
+                                alt="Panorama Suites">
+                        </div>
+                        <div class="home-card m-0 p-0 mt-3">
+                            <h5 class="card-title mb-0 big-green">ALPS</h5>
+                            <p class="card-text mt-0">Panorama Suites</p>
+                        </div>
+                    </article>
+                    <article class="p-1">
+                        <div class="zoomed-image">
+                            <img id="house" class="house zoomed-image" src="Medias/accommodations-post-villa-lorenzo-17c7f3e1.webp"
+                                alt="Villa Lorenzo">
+                        </div>
+                        <div class="home-card m-0 p-0 mt-3">
+                            <h5 class="card-title mb-0 big-green">ROME REGION</h5>
+                            <p class="card-text mt-0">Villa Lorenzo</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <section id="special" class="mx-xl-5 mx-md-3 mx-sm-0 mt-5 d-flex flex-nowrap big-margin-b">
+                <div id=" special-details" class="m-2">
+                    <h3 class="big-green">WHAT MAKES US SPECIAL</h3>
+                    <p class="big-text">We provide a network of exclusive, one-of-a-kind holiday homes to help you plan a safe, relaxing and
+                        unforgettable vacation. </p>
+                    <div class="row row-cols-xl-2 row-cols-lg-2 row-cols-md-2 row-cols-sm-1 row-cols-1">
+                        <div class="col d-flex flex-column my-2">
+                            <i class="m-1 fas fa-award fa-2x green"></i>
+                            <span class="heavy my-1">Handpicked Locations</span>
+                            <p class="light my-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                                et dolore magna aliqua.</p>
+                        </div>
+                        <div class="col d-flex flex-column my-2">
+                            <i class="m-1 far fa-gem fa-2x green"></i>
+                            <span class="heavy my-1">Exclusive Expreriences</span>
+                            <p class="light my-1">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure.</p>
+                        </div>
+                        <div class="col d-flex flex-column my-2">
+                            <i class="m-1 fas fa-drafting-compass fa-2x green"></i>
+                            <span class="heavy my-1">Unique Design</span>
+                            <p class="light my-1">Reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                occaecat cupidatat non proident.</p>
+                        </div>
+                        <div class="col d-flex flex-column my-2">
+                            <i class="m-1 fas fa-recycle fa-2x green"></i>
+                            <span class="heavy my-1">Sustainable Architecture</span>
+                            <p class="light my-1">Sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit. </p>
+                        </div>
+                    </div>
+                </div>
+                <picture>
+                    <source media="(min-width: 992px)" srcset="Medias/home-about-bg.svg">
+                    <img />
+                </picture>
+            </section>
+            <section id="cozy-places" class="big-padding-b">
+                <div class="mx-xl-5 mx-lg-5 mx-md-3 mx-sm-0 mx-0 mt-5 d-flex justify-content-center">
+                    <div class="row row-cols-xl-2 row-cols-lg-2 row-cols-md-1 row-cols-sm-1 row-cols-1">
+                        <section class="col col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 d-flex flex-column">
+                            <div class="m-xl-2 me-xl-5 mb-xl-0 m-lg-2 me-lg-5 mb-lg-0 m-md-2 me-md-5 mb-md-5 m-sm-2 me-sm-5 mb-sm-5 m-2 me-5 mb-5">
+                                <h4 class="heavy my-1 mb-3">Cozy Places</h4>
+                                <p class="light my-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                    labore et dolore magna aliqua.</p>
+                                <div id="cozy-text" class="mt-3">
+                                    <button id="cozy-button" class="btn btn-success rounded-pill"><span class="heavy px-3">Discover
+                                            More</span></button>
+                                </div>
+                            </div>
+                        </section>
+                        <div class="col col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12 d-flex flex-column">
+                            <div class="row row-cols-xl-2 row-cols-lg-2 row-cols-md-2 row-cols-sm-1 row-cols-1">
+                                <article
+                                    class="col d-flex flex-column m-xl-0 m-lg-0 m-md-0 m-sm-2 m-2 p-xl-1 p-lg-1 p-md-1 p-sm-0 p-0 p-0 house-card">
+                                    <div class="zoomed-image">
+                                        <img id="house" class="house zoomed-image" src="Medias/accommodations-post-lykkelig-hytta-54055711.webp"
+                                            alt="Lykkelig Hytta">
+                                    </div>
+                                    <div class="home-card mt-3 m-2">
+                                        <h5 class="card-title mb-0 big-green">VESTERÅLEN</h5>
+                                        <p class="card-text mt-0">Lykkelig Hytta</p>
+                                    </div>
+                                </article>
+                                <article
+                                    class="col d-flex flex-column m-xl-0 m-lg-0 m-md-0 m-sm-2 m-2 p-xl-1 p-lg-1 p-md-1 p-sm-0 p-0 p-0 house-card">
+                                    <div class="zoomed-image ">
+                                        <img id="house" class="house zoomed-image" src="Medias/accommodations-post-cosy-holiday-cottage-f0d7c9cf.webp"
+                                            alt="Cosy Holliday Cottage">
+                                    </div>
+                                    <div class="home-card mt-3 m-2">
+                                        <h5 class="card-title mb-0 big-green">HIGHLANDS</h5>
+                                        <p class="card-text mt-0">Cosy Holliday Cottage</p>
+                                    </div>
+                                </article>
+                                <article
+                                    class="col d-flex flex-column m-xl-0 m-lg-0 m-md-0 m-sm-2 m-2 p-xl-1 p-lg-1 p-md-1 p-sm-0 p-0 p-0 house-card">
+                                    <div class="zoomed-image">
+                                        <img id="house" class="house zoomed-image"
+                                            src="Medias/accommodations-post-luxurious-lodge-near-rochester-e97cf432.webp"
+                                            alt="Luxurious Lodge near Rochester">
+                                    </div>
+                                    <div class="home-card mt-3 m-2">
+                                        <h5 class="card-title mb-0 big-green">LONDON REGION</h5>
+                                        <p class="card-text mt-0">Luxurious Lodge Lodge near Rochester</p>
+                                    </div>
+                                </article>
+                                <article
+                                    class="col d-flex flex-column m-xl-0 m-lg-0 m-md-0 m-sm-2 m-2 p-xl-1 p-lg-1 p-md-1 p-sm-0 p-0 p-0 house-card">
+                                    <div class="zoomed-image">
+                                        <img id="house" class="house zoomed-image"
+                                            src="Medias/accommodations-post-snug-apartment-with-fireplace-5eab1422.webp"
+                                            alt="Snug Apartment With Fireplace">
+                                    </div>
+                                    <div class="home-card mt-3 m-2">
+                                        <h5 class="card-title mb-0 big-green">LONDON REGION</h5>
+                                        <p class="card-text mt-0">Snug Apartment With Fireplace</p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <div id="cozy-div" class="button-div mt-3">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="Get Inspired" class="mx-xl-5 mx-lg-5 mx-md-3 mx-sm-0 mx-0 mt-5 big-margin-b">
+                <div class="d-flex justify-content-between">
+                    <h4>Get Inspired</h4>
+                    <button class="btn"><i class="fas fa-minus fa-lg big-green"></i></i><span class="mx-1">View All</span></button>
+                </div>
+            </section>
+        </main>
+        <!-- Footer -->
+        <footer>
+        </footer>
+    </div>
+</body>
+
+</html>
