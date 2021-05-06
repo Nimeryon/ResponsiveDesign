@@ -152,6 +152,11 @@ body {
     padding: 20px;
 }
 
+.list-m-p-2 {
+    margin: 20px;
+    padding: 20px;
+}
+
 #cozy-places .house {
     width: 100%;
 }
@@ -167,6 +172,86 @@ body {
     justify-content: center;
 }
 
+.overflow-dots {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.article p {
+    height: 60px;
+}
+
+footer section {
+    background-color: #008776;
+}
+
+.newsletter-button {
+    border: 1px solid #f8f8f8;
+    border-color: 1px solid #f8f8f8;
+    background-color: #008776;
+}
+
+.newsletter-button span {
+    color: #f8f8f8;
+}
+
+#newsletter h3 {
+    color: #f8f8f8;
+}
+
+.form-input {
+    width: 100%;
+    text-indent: 10px;
+    border: 1px solid #24a392;
+    border-color: 1px solid #24a392;
+    background-color: #24a392;
+}
+
+.form-button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.newsflex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.newstext {
+    width: 100%;
+    text-align: center;
+}
+
+.newsform {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (min-width: 768px){
+    .newsform {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form-input {
+        width: 25%;
+    }
+
+    .form-button {
+        width: 25%;
+        display: inline;
+    }
+}
+
 @media only screen and (min-width: 992px){
     #cozy-places .house {
         max-height: 450px;
@@ -176,8 +261,12 @@ body {
         margin: 50px;
         padding: 40px;
     }
-}
 
+    .list-m-p-2 {
+        margin: 30px;
+        padding: 40px;
+    }
+}
 
 @media only screen and (min-width: 1200px){
     #cozy-places .house {
@@ -192,5 +281,22 @@ body {
     .list-m-p {
         margin: 50px;
         padding: 50px;
+    }
+
+    .list-m-p-2 {
+        margin: 50px;
+        padding: 50px;
+    }
+
+    .newstext {
+        width: 20%;
+        text-align: left;
+    }
+
+    .newsflex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
     }
 }
