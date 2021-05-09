@@ -182,7 +182,7 @@ body {
     height: 60px;
 }
 
-footer section {
+footer #newsletter {
     background-color: #008776;
 }
 
@@ -232,6 +232,25 @@ footer section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+footer #footer img {
+    height: 40px;
+}
+
+.footer-pres {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.footer-list {
+
+}
+
+.footer-list .green {
+    letter-spacing: 2px;
 }
 
 @media only screen and (min-width: 768px){
