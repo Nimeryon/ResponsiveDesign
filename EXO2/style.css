@@ -1,0 +1,25 @@
+.carousel-inner {
+  padding-top: 40px;
+}
+
+.card-group {
+  padding-top: 50px;
+}
+
+.card {
+  padding-top: 50px;
+}
+.titre {
+  font-size: 30px;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.texte-en-cour {
+  text-align: center;
+  padding-left: 200px;
+  padding-right: 200px;
+  font-weight: bold;
+  font-size: 20px;
+}
